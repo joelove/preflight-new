@@ -16,11 +16,19 @@ a, a:hover, a:active, a:visited {
 	display: none;
 	background-image: url('http://www.pfvc.co.uk/assets/images/portfolio/14.jpg');
 	background-size: cover;
+	width: 35rem;
+	height: 35rem;
+}
+
+.content {
+	padding: 5%;
+	display: inline-block;
+	width: 90%;
 }
 
 .container {
 	background: black;
-	padding: 1rem;
+	margin: 0 auto;
 }
 
 .clients {
@@ -30,11 +38,6 @@ a, a:hover, a:active, a:visited {
 
 .highlight {
 	color: #d2232a;
-}
-
-.navigation > ul {
-	list-style-type: none;
-	padding: 0;
 }
 
 .section__title {
@@ -49,12 +52,14 @@ a, a:hover, a:active, a:visited {
 .navigation > ul {
     white-space:nowrap;
     overflow-x: auto;
+	list-style-type: none;
+	padding: 0;
 }
 
 .navigation > ul > li {
 	display: inline-block;
 	padding: 0 2rem 0 0;
-	font-size: 1.5rem;
+	font-size: 1.35rem;
 	line-height: 2rem;
 }
 
@@ -71,4 +76,41 @@ a.navigation__link--selected:hover,
 a.navigation__link--selected:active,
 a.navigation__link--selected:visited {
 	color: #d2232a;
+}
+
+@media (min-width: 45rem) {
+	.content {
+		padding: 2rem;
+		width: 41rem;
+	}
+
+	.container {
+		width: 45rem;
+	}
+}
+
+@media (min-width: 71rem) {
+	.gallery {
+		display: inline-block;
+	}
+
+	.container {
+		width: 71rem;
+	}
+
+	.content {
+		width: 31rem;
+		vertical-align: top;
+	}
+
+
+	.navigation > ul > li {
+		font-size: 1rem;
+		padding-right: 1.5rem;
+	}
+
+	.section__text {
+		max-height: 20rem;
+		overflow: auto;
+	}
 }
