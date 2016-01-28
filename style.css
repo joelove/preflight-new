@@ -1,0 +1,74 @@
+body {
+	text-transform: lowercase;
+	background: #1a1a1a;
+	color: white;
+	margin: 0;
+	font-family: "Interstate", "Helvetica", sans-serif;
+	font-size: 100%;
+}
+
+a, a:hover, a:active, a:visited {
+	color: #d2232a;
+	text-decoration: none;
+}
+
+.gallery {
+	display: none;
+	background-image: url('http://www.pfvc.co.uk/assets/images/portfolio/14.jpg');
+	background-size: cover;
+}
+
+.container {
+	background: black;
+	padding: 1rem;
+}
+
+.clients {
+	list-style-type: none;
+	padding: 0;
+}
+
+.highlight {
+	color: #d2232a;
+}
+
+.navigation > ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.section__title {
+	color: #d2232a;
+	display: none;
+}
+
+.section--hidden {
+	display: none;
+}
+
+.navigation > ul {
+    white-space:nowrap;
+    overflow-x: auto;
+}
+
+.navigation > ul > li {
+	display: inline-block;
+	padding: 0 2rem 0 0;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+
+a.navigation__link,
+a.navigation__link:hover,
+a.navigation__link:active,
+a.navigation__link:visited {
+	color: white;
+}
+
+a.navigation__link--selected,
+a.navigation__link--selected:hover,
+a.navigation__link--selected:active,
+a.navigation__link--selected:visited {
+	color: #d2232a;
+}
