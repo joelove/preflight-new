@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head itemscope itemtype="http://schema.org/WebSite">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pre-flight visual communication</title>
-	<link rel="stylesheet" href="style.css">
+    <title itemprop='name'>Pre-flight Visual Communication</title>
+    <link rel="canonical" href="https://pfvc.co.uk/" itemprop="url">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+    <meta name="Author"        content="LemonDigits.com">
+    <meta name="Description"   content="">
+    <meta name="Revisit-After" content="7 Days">
+    <meta name="Robots"        content="index, follow">
+    <meta name="viewport"      content="initial-scale=1, maximum-scale=1, width=device-width">
+
+    <meta property="og:image" content="assets/images/og-image.jpg"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@user">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="assets/images/image.jpg">
+
+    <link rel="icon"          href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" href="assets/images/touch-icon-iphone.png" />
+
     <link href="http://cloud.webtype.com/css/acaebb62-f7b1-477c-af2a-1ce6806ec17f.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="style.css">
+
+    <!-- Google logos https://developers.google.com/structured-data/customize/logos -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "url": "http://www.example.com",
+          "logo": "http://www.example.com/images/logo.png"
+        }
+    </script>
+
+    <!-- Google Contact Points https://developers.google.com/structured-data/customize/contact-points -->
+    <script type="application/ld+json">
+        {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "url" : "http://www.your-company-site.com",
+        "contactPoint" : [
+            { "@type" : "ContactPoint",
+              "telephone" : "+1-401-555-1212",
+              "contactType" : "customer service"
+            } ]
+        }
+    </script>
+
+    <!-- Google Social Profiles https://developers.google.com/structured-data/customize/social-profiles -->
+    <script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "Your Organization Name",
+      "url" : "http://www.your-site.com",
+      "sameAs" : [ "http://www.facebook.com/your-profile",
+        "http://www.twitter.com/yourProfile",
+        "http://plus.google.com/your_profile"]
+    }
+    </script>
 </head>
 <body>
 	<div class="container">
@@ -18,11 +85,21 @@
 			</header>
 			<nav class="navigation">
 				<ul>
-					<li><a class="navigation__link navigation__link--about" href="#about">About Us</a></li>
-					<li><a class="navigation__link navigation__link--services" href="#services">Services</a></li>
-					<li><a class="navigation__link navigation__link--clients" href="#clients">Clients/Brands</a></li>
-					<li><a class="navigation__link navigation__link--portfolio" href="#portfolio">Portfolio</a></li>
-					<li><a class="navigation__link navigation__link--contact" href="#contact">Contact</a></li>
+					<li class="navigation__item navigation__item--about">
+                        <a class="navigation__link" href="#about">About Us</a>
+                    </li>
+					<li class="navigation__item navigation__item--services">
+                        <a class="navigation__link" href="#services">Services</a>
+                    </li>
+					<li class="navigation__item navigation__item--clients">
+                        <a class="navigation__link" href="#clients">Clients/Brands</a>
+                    </li>
+					<li class="navigation__item navigation__item--portfolio">
+                        <a class="navigation__link" href="#portfolio">Portfolio</a>
+                    </li>
+					<li class="navigation__item navigation__item--contact">
+                        <a class="navigation__link" href="#contact">Contact</a>
+                    </li>
 				</ul>
 			</nav>
 			<div class="sections">
@@ -80,6 +157,10 @@
 					</article>
 				</section>
 			</div>
+			<footer class="footer">
+				<img src="logo-preflight.svg" alt="Pre-flight Visual Communication">
+				<img src="logo-tagline.svg" alt="Pre-flight Visual Communication">
+			</footer>
 		</div>
 	</div>
 

@@ -24,6 +24,7 @@ a, a:hover, a:active, a:visited {
 	padding: 5%;
 	display: inline-block;
 	width: 90%;
+	line-height: 1.45;
 }
 
 .container {
@@ -54,13 +55,20 @@ a, a:hover, a:active, a:visited {
     overflow-x: auto;
 	list-style-type: none;
 	padding: 0;
+	margin: 1rem 0 2rem;
 }
 
-.navigation > ul > li {
+.navigation__item {
 	display: inline-block;
-	padding: 0 2rem 0 0;
-	font-size: 1.35rem;
+	padding: 0 1.5rem 0 0;
+	font-size: 1.35em;
 	line-height: 2rem;
+}
+
+.footer {
+	color: #d2232a;
+	padding: 2rem 0 0;
+	max-width: 12rem;
 }
 
 
@@ -78,7 +86,53 @@ a.navigation__link--selected:visited {
 	color: #d2232a;
 }
 
+.section__text::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.section__text::-webkit-scrollbar-button {
+  width: 12px;
+  height: 12px;
+}
+
+.section__text::-webkit-scrollbar-thumb {
+  background: #d2232a;
+  border: 0px none @color-white;
+  border-radius: 0px;
+}
+
+.section__text::-webkit-scrollbar-thumb:hover {
+  background: #d2232a;
+}
+
+.section__text::-webkit-scrollbar-thumb:active {
+  background: #d2232a;
+}
+
+.section__text::-webkit-scrollbar-track {
+  background: #393939;
+  border: 0px none @color-white;
+  border-radius: 0px;
+}
+
+.section__text::-webkit-scrollbar-track:hover {
+  background: #404040;
+}
+
+.section__text::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+.section__text::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 @media (min-width: 45rem) {
+	body {
+		font-size: 125%;
+	}
 	.content {
 		padding: 2rem;
 		width: 41rem;
@@ -87,30 +141,55 @@ a.navigation__link--selected:visited {
 	.container {
 		width: 45rem;
 	}
+
+	.navigation__item {
+		font-size: 1em;
+	}
+
+	.section__title {
+		display: inline;
+	}
 }
 
 @media (min-width: 71rem) {
+	body {
+		font-size: 100%;
+	}
+
 	.gallery {
 		display: inline-block;
 	}
 
 	.container {
-		width: 71rem;
+		width: 70.5rem;
+		height: 35rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -17.5rem;
+		margin-left: -35.25rem;
 	}
 
 	.content {
-		width: 31rem;
+		padding: 2rem 3rem;
+		width: 29rem;
 		vertical-align: top;
 	}
 
-
-	.navigation > ul > li {
-		font-size: 1rem;
-		padding-right: 1.5rem;
+	.section__text {
+		height: 16rem;
+		padding-right: 2rem;
+		overflow: auto;
 	}
 
-	.section__text {
-		max-height: 20rem;
-		overflow: auto;
+	.navigation__item--hidden-desktop {
+		display: none;
+	}
+}
+
+@media (max-height: 35rem) {
+	.container {
+		position: static;
+		margin: 0 auto;
 	}
 }

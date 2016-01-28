@@ -7,9 +7,13 @@ $(function() {
 
   var navigationClass = 'navigation__link';
   var navigationSelectedClass = 'navigation__link--selected';
-  var navigationAboutClass = 'navigation__link--about';
+  var navigationAboutClass = 'navigation__item--about > a';
+  var navigationPortfolioClass = 'navigation__item--portfolio';
+  var navigationHideDesktopClass = 'navigation__item--hidden-desktop';
 
   function _(className) { return $('.' + className) }
+
+  _(navigationPortfolioClass).addClass(navigationHideDesktopClass);
 
   _(headerClass).hide();
   _(sectionClass).addClass(sectionHiddenClass);
