@@ -33,4 +33,17 @@ $(function() {
 
     event.preventDefault();
   });
+
+  $('.gallery').slideme({
+    arrows: false,
+    autoslide: true,
+    autoslideHoverStop: true,
+    interval: 2000,
+    loop: true,
+    transition: 'fade',
+    resizable: {
+      width: 1000,
+      height: 1000,
+    }
+  });
 });
